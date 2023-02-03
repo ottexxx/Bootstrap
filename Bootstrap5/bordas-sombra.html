@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- LINK CDN CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
+    <!-- LINK CDN JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <title>bordas e sombras</title>
+</head>
+<body>
+    <h1 class="text-center">Hi, Hello World!</h1>
+    <hr>
+    <div class="container">
+        <div class="col-4 mx-auto p-5 bg-success border border-warning border-5 border-opacity-75 rounded-pill shadow-lg text-light">Arredondamento</div>
+    </div>
+    <hr>
+    <div class="col-4 mb-5 p-3 bg-success rounded text-light m-3 shadow-none">Sem sombra</div>
+    <hr>
+    <div class="col-4 mb-5 p-3 bg-success rounded text-light m-3 shadow-sm">Com sombra</div>
+    <hr>
+    <div class="col-4 mb-5 p-3 bg-success rounded text-light m-3 shadow-lg">Com sombra</div>
+    
+    <!-- TRABALHANDO COM BOTÕES NO BOOTSTRAP --> 
+    <!-- formatação padrão: btn = botão -->
+    <!-- btn-primary, btn-secondary, btn-sucess, btn-info, btn-danger, btn-warning, btn-light, btn-dark. btn-link -->
+
+    <h3 class="m-3">Botões</h3>
+
+    <button class="m-3 btn btn-dark border-dark" type="button">Clique 1</button>
+    <button class="m-3 btn btn-info border-dark" type="button">Clique 2</button>
+    <button class="m-3 btn btn-success border-dark" type="button">Clique 3</button>
+    <button class="m-3 btn btn-warning border-dark" type="button">Clique 4</button>
+    <button class="m-3 btn btn-secondary border-dark" type="button">Clique 5</button>
+    <button class="m-3 btn btn-danger border-dark" type="button">Clique 6</button>
+    <button class="m-3 btn btn-primary border-dark" type="button">Clique 7</button>
+    <button class="m-3 btn btn-light border-dark" type="button">Clique 8</button>
+    <button class="m-3 btn btn-link border-dark" type="button">Clique 9</button>
+    <hr>
+    <h3 class="m-3">Botões com diferentes tags</h3>
+    <a class="m-3" href="#">Link</a>
+    <button class="m-3" type="submit">Submit</button>
+    <input class="m-3" type="submit" value="Button">
+    <input class="m-3" type="submit" value="Input Submit">
+    <input class="m-3" type="reset" value="Reset">
+    <hr>
+    <h3 class="m-3">Botão com Contorno</h3>
+    <button class="btn m-2" type="button">Clique no Botão</button>
+    <button class="btn btn-primary m-2 border-dark" type="button">Clique no Botão</button>
+    <button class="btn btn-secondary m-2 border-dark" type="button">Clique no Botão</button>
+    <button class="btn btn-success m-2 border-dark" type="button">Clique no Botão</button>
+    <hr>
+    <h3 class="m-3">Tamanhos de Botões</h3>
+    <button class="btn btn-primary btn-lg m-3" type="button">Tamanho Grande</button>
+    <button class="btn btn-success m-3" type="button">Tamanho Normal</button>
+    <button class="btn btn-success btn-block m-3" type="button">Tamanho Normal</button> <!-- esse é com button block -->
+    <button class="btn btn-success btn-sm m-3" type="button">Tamanho Pequeno</button>
+    <hr>
+    <h3 class="m-3">Botões com Contornos Coloridos</h3>
+    <button class="btn btn-outline-primary text-dark fw-bolder m-2" type="button">Clique no Botão</button>
+    <button class="btn btn-outline-secondary text-dark fw-bolder m-2" type="button">Clique no Botão</button>
+    <button class="btn btn-outline-success text-dark fw-bolder m-2" type="button">Clique no Botão</button>
+    <button class="btn btn-outline-warning text-dark fw-bolder m-2" type="button">Clique no Botão</button>
+    <hr>
+    <h3 class="m-3">Desabilitando Botões</h3>
+    <button class="btn btn-outline-primary text-dark fw-bolder m-2" type="button" disabled>Botão Desabilitado</button>
+    <button class="btn btn-outline-secondary text-dark fw-bolder m-2" type="button" disabled>Botão Desabilitado</button>
+    <button class="btn btn-outline-success text-dark fw-bolder m-2" type="button" disabled>Botão Desabilitado</button>
+    <button class="btn btn-outline-warning text-dark fw-bolder m-2" type="button" disabled>Botão Desabilitado</button>
+    <hr>
+    <h3 class="m-3">Estado dos Botões</h3>
+    <button class="btn btn-outline-primary m-2" type="button" data-bs-toggle="button">Alternar</button>
+    <button class="btn btn-outline-secondary m-2" type="button" active data-bs-toggle="button" pressed="true">Botão Ativo</button>
+    <button class="btn btn-outline-success m-2" type="button" disabled data-bs-toggle="button">Desabilitado</button>
+    <button class="btn btn-outline-secondary m-2" type="button" data-bs-toggle="button">Normal</button>
+    <hr>
+    <h3 class="m-3">Grupo de Botões</h3>
+    <div class="btn-group-vertical m-3" role="group" aria-label="vertical button group">
+        <button type="button" class="btn btn-light text-dark border border-dark">left</button>
+        <button type="button" class="btn btn-light text-dark border border-dark">middle</button>
+        <button type="button" class="btn btn-light text-dark border border-dark ">right</button>
+    </div>
+    <hr>
+    <h3 class="m-3">Grupo de Botões CheckBox Múltipla Escolha</h3>
+    <div class="btn-group m-3" role="group" aria-label="Checkbox button group">
+
+        <input type="checkbox" class="btn-check" id="btn-check1" autocomplete="off">
+        <label class="btn btn-outline-success fw-bolder" for="btn-check1">Botão 1 CheckBox</label>
+
+        <input type="checkbox" class="btn-check" id="btn-check2" autocomplete="off">
+        <label class="btn btn-outline-success fw-bolder" for="btn-check2">Botão 2 CheckBox</label>
+
+        <input type="checkbox" class="btn-check" id="btn-check3" autocomplete="off">
+        <label class="btn btn-outline-success fw-bolder" for="btn-check3">Botão 3 CheckBox</label>
+
+    </div>
+    <hr>
+    <h3 class="m-3">CheckBox de Rádio</h3>
+    <div class="btn-group m-3" role="group" aria-label="Basic radio toggle button group">
+
+        <input type="radio" class="btn-check" id="btn-radio1" name="btnradio" autocomplete="off">
+        <label class="btn btn-outline-primary fw-bolder" for="btn-radio1">Botão 1 Rádio</label>
+
+        <input type="radio" class="btn-check" id="btn-radio2" name="btnradio" autocomplete="off">
+        <label class="btn btn-outline-primary fw-bolder" for="btn-radio2">Botão 2 Rádio</label>
+
+        <input type="radio" class="btn-check" id="btn-radio3" name="btnradio" autocomplete="off">
+        <label class="btn btn-outline-primary fw-bolder" for="btn-radio3">Botão 3 Rádio</label>
+    </div>
+    <hr>
+    <h3 class="m-3">Botões de Ferramentas</h3>
+    <div class="btn-toolbar" role="toolbar" aria-label="toolbar width button group">
+        <div class="btn-group me-2" role="group" aria-label="first group">
+            <button type="button" class="btn btn-primary">1</button>
+            <button type="button" class="btn btn-primary">2</button>
+            <button type="button" class="btn btn-primary">3</button>
+            <button type="button" class="btn btn-primary">4</button>
+        </div>
+</body> 
+</html>
